@@ -1,0 +1,17 @@
+# Jekyll build output (GitHub Pages workflow)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# System / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Original photos (the page uses the compressed assets/images/portrait.jpg)
+/assets/images/profile.jpg
+/assets/images/profile2.png

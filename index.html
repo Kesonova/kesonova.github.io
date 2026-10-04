@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Kaixing Zhang | 张凯星">
+  <meta name="description" content="Kaixing Zhang, ShanghaiTech University. Research on LLM interpretability and leveraging internal representations to empower LLMs in agentic scenarios.">
+  <meta name="color-scheme" content="light">
+  <title>Kaixing Zhang | 张凯星</title>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="navigation.js" defer></script>
+  <script src="interactions.js" defer></script>
+  <script src="liquid-glass.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to main content</a>
+  <aside class="section-nav" aria-label="Page sections">
+    <div class="section-nav__inner">
+      <a class="section-nav__label" href="#about">Index</a>
+      <div class="section-nav__track">
+        <span class="section-nav__indicator" aria-hidden="true" data-liquid-glass data-lg-elastic="false" data-lg-depth="0.45"></span>
+        <ol class="section-nav__list" id="section-nav-list">
+          <li class="section-nav__item"><a class="section-nav__link" href="#about">About</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#news">News</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#research">Research</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#education">Education</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#honors">Honors</a></li>
+          <!-- TODO: re-enable these once the sections below are filled in.
+          <li class="section-nav__item"><a class="section-nav__link" href="#experience">Experience</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#beyond">Miscellaneous</a></li>
+          -->
+        </ol>
+      </div>
+    </div>
+  </aside>
+
+  <main class="page-shell">
+    <section id="about" class="page-section profile" data-nav-section data-nav-label="About" tabindex="-1">
+      <div class="profile-copy">
+        <h1 class="name">Kaixing Zhang <span class="name-divider" aria-hidden="true">/</span> <span class="chinese-name" lang="zh-CN">张凯星</span></h1>
+        <p class="profile-intro">Hi there! I am a Master's student in Computer Science at <a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a>, where I am fortunate to be advised by <a href="https://www.saying.ren/">Prof. Kan Ren</a>.</p>
+        <p class="profile-intro">My research focuses on <strong>LLM interpretability</strong>: understanding what large language models encode in their <strong>internal representations</strong> and how those representations give rise to their behavior.</p>
+        <p class="profile-intro">Building on this understanding, I am particularly interested in <strong>leveraging representations to empower LLMs in agentic scenarios</strong>, from <strong>steering and enhancing their reasoning</strong> to <strong>guiding the self-evolution of agent skills</strong>.</p>
+        <div class="profile-links" aria-label="Contact and profiles">
+          <a class="profile-link" data-liquid-glass href="mailto:kesonstar@qq.com"><img src="assets/files/icon/email.png" width="22" height="22" alt="">Email</a>
+          <a class="profile-link" data-liquid-glass href="https://scholar.google.com/citations?user=b8vRYe4AAAAJ&amp;hl=en"><img src="assets/files/icon/google_scholar.png" width="22" height="22" alt="">Google Scholar</a>
+          <a class="profile-link" data-liquid-glass href="https://github.com/Kesonova"><img src="assets/files/icon/github.svg" width="22" height="22" alt="">GitHub</a>
+        </div>
+      </div>
+      <figure class="profile-portrait">
+        <img class="avatar" src="assets/images/portrait.jpg" alt="Portrait of Kaixing Zhang" width="1000" height="1250" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section id="news" class="page-section news-section" data-nav-section tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">News</h2></header>
+      <ul class="news-list">
+        <li><time datetime="2026-09">Sep 2026</time><p><em>Interpreting and Controlling LLM Reasoning through Integrated Policy Gradient</em> got accepted to <strong>NeurIPS 2026!</strong></p></li>
+      </ul>
+    </section>
+
+    <section id="research" class="page-section research-section" data-nav-section data-nav-label="Research" tabindex="-1">
+      <header class="section-heading research-heading">
+        <h2 class="section-title" id="research-heading">All Research Papers</h2>
+        <button class="research-toggle" id="research-toggle" type="button" aria-controls="research-papers" aria-expanded="false" hidden>All Research Papers</button>
+      </header>
+      <p class="sr-only" id="research-status" role="status" aria-live="polite"></p>
+      <div id="research-papers">
+        <article class="paper-row highlight-paper" data-liquid-glass data-lg-elasticity="0.03" data-lg-refraction="false" data-highlight="true" aria-labelledby="rep2skill-title">
+          <a class="paper-figure" href="assets/images/rep2skill.png" data-figure data-caption="Rep2Skill — Representation-guided skill self-evolution" aria-label="Enlarge the Rep2Skill overview figure"><img src="assets/images/rep2skill.png" alt="Rep2Skill pipeline overview" width="1985" height="692" loading="lazy"></a>
+          <div class="paper-content">
+            <h3 class="papertitle" id="rep2skill-title"><a href="https://arxiv.org/abs/2609.39149">Rep2Skill: Representation-Guided Skill Self-Evolution for LLM Agents</a></h3>
+            <p class="authors"><span class="author-self">Kaixing Zhang</span>, Changming Li, Yingdong Shi, Zheng Zhang, Kaitao Song, Wenjie Shi, Jingang Wang, Kan Ren</p>
+            <p class="venue-full">arXiv preprint arXiv:2609.39149, 2026</p>
+            <p class="paper-description">Moves skill evolution beyond the text space by using the agent's internal representations to guide how reusable textual skills are diagnosed and revised.</p>
+            <div class="paper-links-group">
+              <a class="link-with-icon" href="https://arxiv.org/abs/2609.39149"><img src="assets/files/icon/arxiv.svg" width="20" height="20" alt="">Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-row" data-highlight="false" aria-labelledby="unisteer-title">
+          <a class="paper-figure" href="assets/images/unisteer.png" data-figure data-caption="UniSteer — Text-guided flow matching in activation space" aria-label="Enlarge the UniSteer overview figure"><img src="assets/images/unisteer.png" alt="UniSteer pipeline overview" width="1676" height="937" loading="lazy"></a>
+          <div class="paper-content">
+            <h3 class="papertitle" id="unisteer-title"><a href="https://arxiv.org/abs/2605.30076">UniSteer: Text-Guided Flow Matching in Activation Space for Versatile LLM Steering</a></h3>
+            <p class="authors">Yingdong Shi, Ruiming Zhang, Changming Li, Zhiyu Yang, <span class="author-self">Kaixing Zhang</span>, Jingyi Yu, Kan Ren</p>
+            <p class="venue-full">arXiv preprint arXiv:2605.30076, 2026</p>
+            <p class="paper-description">A text-guided activation flow matching model for steering LLMs toward fine-grained and compositional behaviors without fixed steering directions.</p>
+            <div class="paper-links-group">
+              <a class="link-with-icon" href="https://arxiv.org/abs/2605.30076"><img src="assets/files/icon/arxiv.svg" width="20" height="20" alt="">Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-row highlight-paper" data-liquid-glass data-lg-elasticity="0.03" data-lg-refraction="false" data-highlight="true" aria-labelledby="ipg-title">
+          <a class="paper-figure" href="assets/images/ipg.png" data-figure data-caption="Integrated Policy Gradient — Interpreting and controlling LLM reasoning" aria-label="Enlarge the Integrated Policy Gradient overview figure"><img src="assets/images/ipg.png" alt="Integrated Policy Gradient pipeline overview" width="2044" height="581" loading="lazy"></a>
+          <div class="paper-content">
+            <h3 class="papertitle" id="ipg-title"><a href="https://arxiv.org/abs/2602.02313">Interpreting and Controlling LLM Reasoning through Integrated Policy Gradient</a></h3>
+            <p class="authors">Changming Li, <span class="author-self">Kaixing Zhang</span>, Haoyun Xu, Yingdong Shi, Zheng Zhang, Kaitao Song, Kan Ren</p>
+            <p class="venue-full">Conference on Neural Information Processing Systems (NeurIPS) 2026</p>
+            <p class="paper-description">Localizes the internal components that drive complex LLM reasoning and uses them to enhance or suppress reasoning behaviors.</p>
+            <div class="paper-links-group">
+              <a class="link-with-icon" href="https://arxiv.org/abs/2602.02313"><img src="assets/files/icon/arxiv.svg" width="20" height="20" alt="">Paper</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="page-section" data-nav-section tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Education</h2></header>
+      <div class="education-list">
+        <div class="institution-row education-row">
+          <a class="institution-logo" href="https://www.shanghaitech.edu.cn/eng/" aria-label="ShanghaiTech University"><img src="assets/images/shanghaitech-emblem.svg" alt="ShanghaiTech University emblem" width="60" height="60" loading="lazy"></a>
+          <div class="institution-copy"><h3><a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a></h3><p>M.S. in Computer Science</p></div>
+          <p class="institution-date"><time datetime="2026">2026</time> – <time datetime="2029">2029</time><span class="date-note">expected</span></p>
+        </div>
+        <div class="institution-row education-row">
+          <a class="institution-logo" href="https://www.berkeley.edu/" aria-label="University of California, Berkeley"><img src="assets/images/berkeley.svg" alt="University of California, Berkeley seal" width="60" height="60" loading="lazy"></a>
+          <div class="institution-copy"><h3><a href="https://www.berkeley.edu/">University of California, Berkeley</a></h3><p>Exchange Student</p></div>
+          <p class="institution-date"><time datetime="2025">2025</time></p>
+        </div>
+        <div class="institution-row education-row">
+          <a class="institution-logo" href="https://www.shanghaitech.edu.cn/eng/" aria-label="ShanghaiTech University"><img src="assets/images/shanghaitech-emblem.svg" alt="ShanghaiTech University emblem" width="60" height="60" loading="lazy"></a>
+          <div class="institution-copy"><h3><a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a></h3><p>B.S. in Computer Science</p></div>
+          <p class="institution-date"><time datetime="2022">2022</time> – <time datetime="2026">2026</time></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="honors" class="page-section" data-nav-section data-nav-label="Honors" tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Honors &amp; Awards</h2></header>
+      <ul class="awards-list">
+        <li><span class="award-year">2026</span><span>Outstanding Graduate, ShanghaiTech University (top 10%)</span></li>
+        <li><span class="award-year">2025</span><span>Outstanding Student, ShanghaiTech University (top 7%)</span></li>
+      </ul>
+    </section>
+
+    <!-- TODO: fill in and uncomment the sections below (and their nav entries at the top).
+
+    <section id="experience" class="page-section" data-nav-section tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Experience</h2></header>
+      <div class="experience-list">
+        <div class="institution-row"><div class="institution-logo"><img src="assets/images/ORG_LOGO.png" alt="ORG" width="64" height="64" loading="lazy"></div><div class="institution-copy"><h3>Organization</h3><p>Role</p></div><p class="institution-date"><time datetime="YYYY-MM">Mon YYYY</time> – Present</p></div>
+      </div>
+    </section>
+
+    <section id="beyond" class="page-section" data-nav-section data-nav-label="Miscellaneous" tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Miscellaneous</h2></header>
+      <p>Beyond research, I enjoy ...</p>
+    </section>
+    -->
+
+    <footer class="site-footer"><a class="back-top" href="#about" aria-label="Back to top" data-liquid-glass>↑</a></footer>
+  </main>
+
+  <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-caption">
+    <form method="dialog"><button class="dialog-close" aria-label="Close figure">×</button></form>
+    <figure><img id="figure-image" alt=""><figcaption id="figure-caption"></figcaption></figure>
+  </dialog>
+</body>
+</html>
